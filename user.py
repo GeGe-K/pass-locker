@@ -85,6 +85,7 @@ class Credentials:
         self.account = account
         self.username = Username
         self.password = password
+        self.email = email
 
     def save_credentials(self):
 
