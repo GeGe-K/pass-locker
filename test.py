@@ -109,20 +109,20 @@ class TestCredentials(unittest.TestCase):
         '''
         self.new_credentials.save_credentials() # Saving the new credentials
 
-#     def tearDown(self):
-#         '''
-#         tearDown method that does clean up after each test has been run
-#         '''  
-#         Credentials.credentials_list = []
+    def tearDown(self):
+        '''
+        tearDown method that does clean up after each test has been run
+        '''  
+        Credentials.credentials_list = []
 
-#     def test_save_multiple_credentials(self):
-#         '''
-#         method that checks if we can save multiple credentials objects to credentials_list
-#         '''  
-#         self.new_credential.save_credential()
-#         test_credential = Credential("Instagram","Gloria Givondo","thegram")
-#         test_credential.save_credential()
-#         self.assertEqual(len(Credentials.credentials_list),2)
+    def test_save_multiple_credentials(self):
+        '''
+        method that checks if we can save multiple credentials objects to credentials_list
+        '''  
+        self.new_credentials.save_credentials()
+        test_credentials = Credentials("Instagram","Gloria Givondo","thegram")
+        test_credentials.save_credentials()
+        self.assertEqual(len(Credentials.credentials_list),2)
 
 #       def test_delete_credentials(self):
 #         '''
