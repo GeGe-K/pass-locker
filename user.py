@@ -56,7 +56,7 @@ class User:
             Boolean: True or false depending if the user exists
         '''
         for user in cls.user_list:
-            if user.username == username:
+            if user.username == name:
                     return True
 
         return False
@@ -76,7 +76,7 @@ class Credentials:
     credentials_list = []  # Empty credentials list
 
     # Init method
-    def _init_(self,account,username,password):
+    def __init__(self,account,username,password):
 
         '''
         Initialises the user's credentials
