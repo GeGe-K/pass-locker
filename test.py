@@ -52,7 +52,7 @@ class TestUser(unittest.TestCase):
         test_delete_user to test if we can remove a user from our user list
         '''
         self.new_user.save_user()
-        test_user = User("Test","20Maroon07") # new user
+        test_user = User("Test","20Maroon07") 
         test_user.save_user()
 
         self.new_user.delete_user()# Deleting a user object
@@ -64,7 +64,7 @@ class TestUser(unittest.TestCase):
         '''
 
         self.new_user.save_user()
-        test_user = User("Test","20Maroon07") # new user
+        test_user = User("Test","20Maroon07") 
         test_user.save_user()
 
         user_exists = User.user_exist("Test")
@@ -78,29 +78,29 @@ class TestUser(unittest.TestCase):
 
     #     self.assertEqual(User.display_users(),User.user_list)
 
-# class TestUser(unittest.TestCase):
-#     '''
-#     Test class that define test cases for the credentials class behaviour.
+class TestCredentials(unittest.TestCase):
+    '''
+    Test class that define test cases for the credentials class behaviour.
 
-#     Args:
-#         unittest.TestCase: TestCase class that helps in cresting test cases.
-#     '''
+    Args:
+        unittest.TestCase: TestCase class that helps in cresting test cases.
+    '''
 
-#     def setUp(self):
-#         '''
-#         Set up method to run before each test cases.
-#         '''
-#         self.new_credentials = Credentials("Git","GeGe-K","2012bfc") #Create credentials object
+    def setUp(self):
+        '''
+        Set up method to run before each test cases.
+        '''
+        self.new_credentials = Credentials("Git","GeGe-K","2012bfc") #Create credentials object
 
 
-#     def test_init(self):
-#         '''
-#         test_init test case to test if the object is initialized properly
-#         '''
+    def test_init(self):
+        '''
+        test_init test case to test if the object is initialized properly
+        '''
 
-#         self.assertEqual(self.new_credentials.account,"Git")
-#         self.assertEqual(self.new_credentials.username,"GeGe-K")
-#         self.assertEqual(self.new_credentials.password,"2012bfc")
+        self.assertEqual(self.new_credentials.account,"Git")
+        self.assertEqual(self.new_credentials.username,"GeGe-K")
+        self.assertEqual(self.new_credentials.password,"2012bfc")
 
 #     def test_save_credentials(self):
 #         '''
