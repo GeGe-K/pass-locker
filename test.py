@@ -77,7 +77,93 @@ class TestUser(unittest.TestCase):
     #     '''
 
     #     self.assertEqual(User.display_users(),User.user_list)
-        
+
+# class TestUser(unittest.TestCase):
+#     '''
+#     Test class that define test cases for the credentials class behaviour.
+
+#     Args:
+#         unittest.TestCase: TestCase class that helps in cresting test cases.
+#     '''
+
+#     def setUp(self):
+#         '''
+#         Set up method to run before each test cases.
+#         '''
+#         self.new_credentials = Credentials("Git","GeGe-K","2012bfc") #Create credentials object
+
+
+#     def test_init(self):
+#         '''
+#         test_init test case to test if the object is initialized properly
+#         '''
+
+#         self.assertEqual(self.new_credentials.account,"Git")
+#         self.assertEqual(self.new_credentials.username,"GeGe-K")
+#         self.assertEqual(self.new_credentials.password,"2012bfc")
+
+#     def test_save_credentials(self):
+#         '''
+#         test_save_credentials test case to test if the credentials object is saved into
+#          the credentials list
+#         '''
+#         self.new_credentials.save_credentials() # Saving the new credentials
+
+#     def tearDown(self):
+#         '''
+#         tearDown method that does clean up after each test has been run
+#         '''  
+#         Credentials.credentials_list = []
+
+#     def test_save_multiple_credentials(self):
+#         '''
+#         method that checks if we can save multiple credentials objects to credentials_list
+#         '''  
+#         self.new_credential.save_credential()
+#         test_credential = Credential("Instagram","Gloria Givondo","thegram")
+#         test_credential.save_credential()
+#         self.assertEqual(len(Credentials.credentials_list),2)
+
+#       def test_delete_credentials(self):
+#         '''
+#         tests if we can delete a credential from our credentials list
+#         '''  
+#         self.new_credentials.save_credentials()
+#         test_credentials = Credentials("Instagram","Gloria Givondo","thegram")
+#         test_credentials.save_credentials()
+
+#         self.new_credentials.delete_credentials() #Deletes credentials object
+#         self.assertEqual (len(Credentials.credentials_list),1)
+
+#       def test_find_credentials_by_account(self):
+#         '''
+#         to check if we can find a credential by the account name and display more information about it
+#         '''  
+#         self.new_credentials.save_credentials()
+#         test_credentials = Credentials("Instagram","Gloria Givondo","thegram")
+#         test_credentials.save_credentials()
+
+#         found_credentials =Credentials.find_by_account("Instagram")
+#         self.assertEqual(found_credentials.password,test_credentials.password)
+
+#       def test_credentials_exists(self):
+#         '''
+#         checks if we can return a boolean if we cannot find the credentials
+#         '''  
+
+#         self.new_credentials.save_credentials()
+#         test_credentials = Credentials("Instagram","Gloria Givondo","thegram")
+#         test_credentials.save_credentials()
+
+#         credentials_exists =Credentials.credentials_exists("Instagram")
+#         self.assertTrue(credential_exists)
+
+#     def test_display_all_credentials(self):
+#         '''
+#         returns a list of all credentials saved 
+#         '''  
+
+#         self.assertEqual( Credentials.display_credentials(),Credentials.credentials_list)
 
 if __name__ == '__main__':
     unittest.main()
