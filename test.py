@@ -71,18 +71,18 @@ class TestUser(unittest.TestCase):
 
         self.assertTrue(user_exists)
 
-    # def test_find_user_by_username(self):
-    #     '''
-    #     test to check if we can find a contact by phone number and display information
-    #     '''
+    def test_find_user_by_username(self):
+        '''
+        test to check if we can find a user by username and display information
+        '''
 
-    #     self.new_user.save_user()
-    #     test_user = User("Test","Gloria","maroon") # new contact
-    #     test_user.save_user()
+        self.new_user.save_user()
+        test_user = User("Test","Gloria") # new contact
+        test_user.save_user()
 
-    #     found_user = User.find_by_username("Gloria")
+        found_user = User.find_by_username("Test")
 
-    #     self.assertEqual(found_user.username,test_user.username)
+        self.assertEqual(found_user.username,test_user.username)
 
     def test_display_all_users(self):
         '''
