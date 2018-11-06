@@ -159,17 +159,18 @@ class TestCredentials(unittest.TestCase):
         found_credentials =Credentials.find_by_account("Instagram")
         self.assertEqual(found_credentials.password,test_credentials.password)
 
-    # def test_credentials_exists(self):
-    #     '''
-    #     checks if we can return a boolean if we cannot find the credentials
-    #     '''  
+    def test_credentials_exists(self):
+        '''
+        test to check if we can return a Boolean  if we cannot find the credentials.
+        '''
 
-    #     self.new_credentials.save_credentials()
-    #     test_credentials = Credentials("Instagram","Gloria Givondo","thegram")
-    #     test_credentials.save_credentials()
+        self.new_credentials.save_credentials()
+        test_credentials = Credentials("Instagram", "Gloria Givondo", "thegram")
+        test_credentials.save_credentials()
 
-    #     credentials_exists =Credentials.credentials_exists("Instagram")
-    #     self.assertTrue(credential_exists)
+        credentials_exists = Credentials.credentials_exist("Instagram")
+
+        self.assertTrue(credentials_exists)
 
     def test_display_all_credentials(self):
         '''
