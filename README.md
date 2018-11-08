@@ -56,7 +56,7 @@ As a user I would like:
         
 ## Technologies Used
 * Python3.6
-* Visual Studio Code
+* Visual Studio Code text editor
 
 ## Known Bugs
 
