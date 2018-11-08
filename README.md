@@ -25,7 +25,7 @@ As a user I would like:
 | Once logged in | **Welcome to your  account** |  Use these short codes:cc -> Create new credential. fa -> Find credentials. da -> Delete credentials. dc -> Display your credentials list.  ex ->Log Password Locker. |
 | Display prompt for creating a credential | **Enter: cc** | Create new credentials, account, username and password |
 |Display prompt for finding credentials |**Enter: fa**| Find credentials, account, username and password|
-| Display prompt for deleting credentials |**Enter: da**| **Which account do you wish to delete**||Once the account is selected||**Your Instagram credentials have been successfully been deleted**|
+| Display prompt for deleting credentials |**Enter: da**|Once the account is selected **Your Instagram credentials have been successfully been deleted**|
 | Display a list of credentials | **Enter: dc** | Prints a list of saved credentials |
 | Log out account  | **Enter: ex** | Exit password locker |
 
@@ -40,19 +40,19 @@ As a user I would like:
 ### Cloning
 * In your terminal:
         
-       ``` $ git clone https://github.com/GeGe-K/pass-locker.git ```
-        ``` $ cd pass-locker ```
+        $ git clone https://github.com/GeGe-K/pass-locker.git 
+         $ cd pass-locker 
 
 ## Running the Application
 * To run the application, in your terminal:
 
-       ``` $ ./run.py ```
+        $ ./run.py 
       
         
 ## Testing the Application
 * To run the tests for the class file and check if it functions well:
 
-       ```  $ python3.6 test.py ```
+        $ python3.6 test.py 
         
 ## Technologies Used
 * Python3.6
