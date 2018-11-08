@@ -139,7 +139,3 @@ class Credentials:
         '''
         return cls.credentials_list 
     
-    # @ classmethod
-    # def copy_email(cls,number):
-    #     user_found = User.find_by_name(name)
-    #     pyperclip.copy(User_found.email)

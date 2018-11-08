@@ -86,13 +86,13 @@ def display_credentials():
 
 
 def main():
-    print("Hello, welcome to your user list. What is your name?")
+    print("Hello, welcome to your Password Locker. What is your name?")
     user_name = input()
     print(f"Hello {user_name}, what would you like to do?")
     print('\n')
 
     while True:
-        print("Use these short codes: cu - create a new user, li - log in to your account, dc - display credentials, fa - find account, fu - find a user, cc- create new credentials, gp - generate a new password, da- delete account, ex - exit user list")
+        print("Use these short codes: cu - create a new user, li - log in to your account, dc - display credentials, fa - find account, fu - find a user, cc- create new credentials, da- delete account, ex - exit password locker")
         in_short_code = input().lower()
 
 
