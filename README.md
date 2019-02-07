@@ -46,7 +46,8 @@ As a user I would like:
 ## Running the Application
 * To run the application, in your terminal:
 
-        $ ./run.py 
+       $ chmod +x run.py (to make it executable)
+       $ ./run.py 
       
         
 ## Testing the Application
